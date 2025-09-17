@@ -1,0 +1,102 @@
+{"timestamp":"2025-09-17T17:45:13.904086","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-17T17:45:13.904247","level":"info","event":"Filling up the DagBag from /Users/rail/PracticalML/MLOps-practice/services/airflow/dags/entire_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-17T17:45:14.409941Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:45:14.410003Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:45:14.410140Z","level":"info","event":"Current task name:docker_compose_build","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:45:14.410164Z","level":"info","event":"Dag name:full_pipeline_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:45:14.410423","level":"info","event":"Tmp dir root location: /var/folders/2s/dztmgkl93_xfxpgb_dc8lwhw0000gn/T","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.410625","level":"info","event":"Running command: ['/bin/bash', '-c', 'cd /Users/rail/PracticalML/MLOps-practice/code/deployment && docker compose build']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.414881","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.556436","level":"info","event":"time=\"2025-09-17T20:45:14+03:00\" level=warning msg=\"/Users/rail/PracticalML/MLOps-practice/code/deployment/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion\"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.557937","level":"info","event":"Compose can now delegate builds to bake for better performance.","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.557978","level":"info","event":" To do so, set COMPOSE_BAKE=true.","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.828449","level":"info","event":"#0 building with \"desktop-linux\" instance using docker driver","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.828618","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.828662","level":"info","event":"#1 [fastapi internal] load build definition from Dockerfile","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.828692","level":"info","event":"#1 transferring dockerfile: 259B done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.828718","level":"info","event":"#1 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.828743","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:14.828767","level":"info","event":"#2 [fastapi internal] load metadata for docker.io/library/python:3.10-slim","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.512353","level":"info","event":"#2 DONE 0.8s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.613809","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614030","level":"info","event":"#3 [fastapi internal] load .dockerignore","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614107","level":"info","event":"#3 transferring context: 2B done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614141","level":"info","event":"#3 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614166","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614268","level":"info","event":"#4 [fastapi 1/4] FROM docker.io/library/python:3.10-slim@sha256:f8081b61393cc16b2339d377bb523a5646cdd28fc6105612b3893c405d27f730","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614304","level":"info","event":"#4 resolve docker.io/library/python:3.10-slim@sha256:f8081b61393cc16b2339d377bb523a5646cdd28fc6105612b3893c405d27f730 done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614328","level":"info","event":"#4 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614350","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614370","level":"info","event":"#5 [fastapi internal] load build context","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614389","level":"info","event":"#5 transferring context: 132B done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614409","level":"info","event":"#5 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614429","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614448","level":"info","event":"#6 [fastapi 2/4] WORKDIR /app","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614467","level":"info","event":"#6 CACHED","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614486","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614504","level":"info","event":"#7 [fastapi 3/4] COPY . /app","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614524","level":"info","event":"#7 CACHED","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614542","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614561","level":"info","event":"#8 [fastapi 4/4] RUN pip install fastapi uvicorn scikit-learn pandas numpy joblib","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614580","level":"info","event":"#8 CACHED","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614599","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614618","level":"info","event":"#9 [fastapi] exporting to image","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614637","level":"info","event":"#9 exporting layers done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614655","level":"info","event":"#9 exporting manifest sha256:64d6443387c8c68cbc3cdeda61b2c5c768e1975f90cb4aa685dd3f4992ab7375 done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614684","level":"info","event":"#9 exporting config sha256:f4c7a688bf04c2b085743442872ba973bb8556ceac58b4fe783a565bbf7e6eb8 done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614704","level":"info","event":"#9 exporting attestation manifest sha256:16b7658b2427c7e29816f45a1f0f6f805eaa15d44f173778e3990994bd75c5c4 done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614730","level":"info","event":"#9 exporting manifest list sha256:6482e83cf1d3062fc1509358ecbeca41b40d6ab6c16cf0468a7672975771a0d5 done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614752","level":"info","event":"#9 naming to docker.io/library/deployment-fastapi:latest done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614771","level":"info","event":"#9 unpacking to docker.io/library/deployment-fastapi:latest done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614790","level":"info","event":"#9 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614809","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614827","level":"info","event":"#10 [fastapi] resolving provenance for metadata file","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.614846","level":"info","event":"#10 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.715926","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.716156","level":"info","event":"#11 [streamlit internal] load build definition from Dockerfile","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.716247","level":"info","event":"#11 transferring dockerfile: 257B done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.716314","level":"info","event":"#11 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.716376","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:15.716435","level":"info","event":"#2 [streamlit internal] load metadata for docker.io/library/python:3.10-slim","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.015515","level":"info","event":"#2 DONE 1.1s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.080898","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.080965","level":"info","event":"#12 [streamlit internal] load .dockerignore","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.080991","level":"info","event":"#12 transferring context: 2B done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081013","level":"info","event":"#12 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081034","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081055","level":"info","event":"#4 [streamlit 1/4] FROM docker.io/library/python:3.10-slim@sha256:f8081b61393cc16b2339d377bb523a5646cdd28fc6105612b3893c405d27f730","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081077","level":"info","event":"#4 resolve docker.io/library/python:3.10-slim@sha256:f8081b61393cc16b2339d377bb523a5646cdd28fc6105612b3893c405d27f730 done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081097","level":"info","event":"#4 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081116","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081136","level":"info","event":"#13 [streamlit internal] load build context","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081155","level":"info","event":"#13 transferring context: 142B done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081174","level":"info","event":"#13 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081193","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081212","level":"info","event":"#6 [streamlit 2/4] WORKDIR /app","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081231","level":"info","event":"#6 CACHED","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081249","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081269","level":"info","event":"#14 [streamlit 3/4] COPY . /app","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081287","level":"info","event":"#14 CACHED","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081306","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081325","level":"info","event":"#15 [streamlit 4/4] RUN pip install streamlit requests","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081343","level":"info","event":"#15 CACHED","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081362","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081380","level":"info","event":"#16 [streamlit] exporting to image","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081399","level":"info","event":"#16 exporting layers done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081418","level":"info","event":"#16 exporting manifest sha256:88c26b0237b6385bf17ef8e08793f0cbcc03f296602e3909ef898bff8f3fae19 done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081437","level":"info","event":"#16 exporting config sha256:10caf317b335a9a71d5e173f56b25ec7953701363f0e06d56fdc6e745dc2d843 done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081456","level":"info","event":"#16 exporting attestation manifest sha256:ac88f67ef690bf981d76ee9a18dfccf610b32fca65f9522fb111a90ffecac477 done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081475","level":"info","event":"#16 exporting manifest list sha256:722886725d5a7cf72c83114d76bddb2ac6aece19f81f2276fb402f7c2550a298 done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081494","level":"info","event":"#16 naming to docker.io/library/deployment-streamlit:latest done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081513","level":"info","event":"#16 unpacking to docker.io/library/deployment-streamlit:latest done","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081531","level":"info","event":"#16 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081550","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081568","level":"info","event":"#17 [streamlit] resolving provenance for metadata file","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081587","level":"info","event":"#17 DONE 0.0s","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081605","level":"info","event":" fastapi  Built","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.081625","level":"info","event":" streamlit  Built","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.090368","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-17T17:45:16.091321","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019958c7-9e3a-7541-a727-b45458c79a06'), task_id='docker_compose_build', dag_id='full_pipeline_dag', run_id='scheduled__2025-09-17T17:45:00+00:00', try_number=1, map_index=-1, hostname='macbook-air-rail.local', context_carrier=None, task=<Task(BashOperator): docker_compose_build>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 9, 17, 17, 45, 13, 702571, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/full_pipeline_dag/runs/scheduled__2025-09-17T17%3A45%3A00%2B00%3A00/tasks/docker_compose_build?try_number=1')","logger":"task"}
+{"timestamp":"2025-09-17T17:45:16.113272Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:45:16.113348Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:45:16.113984Z","level":"info","event":"Task operator:<Task(BashOperator): docker_compose_build>","chan":"stdout","logger":"task"}

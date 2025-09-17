@@ -1,0 +1,11 @@
+{"timestamp":"2025-09-17T17:38:25.811450","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-17T17:38:25.813081","level":"info","event":"Filling up the DagBag from /Users/rail/PracticalML/MLOps-practice/services/airflow/dags/entire_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-17T17:38:25.862625Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:38:25.862716Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:38:25.863327Z","level":"info","event":"Current task name:trigger_deploy_model","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:38:25.863375Z","level":"info","event":"Dag name:pipeline_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:38:25.863577","level":"info","event":"Triggering Dag Run.","trigger_dag_id":"deploy_model_pipeline","logger":"task"}
+{"timestamp":"2025-09-17T17:38:25.876027","level":"info","event":"Dag Run triggered successfully.","trigger_dag_id":"deploy_model_pipeline","logger":"task"}
+{"timestamp":"2025-09-17T17:38:25.907776Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:38:25.907865Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:38:25.908133Z","level":"info","event":"Task operator:<Task(TriggerDagRunOperator): trigger_deploy_model>","chan":"stdout","logger":"task"}

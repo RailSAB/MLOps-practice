@@ -1,0 +1,15 @@
+{"timestamp":"2025-09-17T17:35:24.842091","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-17T17:35:24.842316","level":"info","event":"Filling up the DagBag from /Users/rail/PracticalML/MLOps-practice/services/airflow/dags/entire_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-17T17:35:24.882145Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.882218Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.882512Z","level":"info","event":"Current task name:trigger_model_training","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.882543Z","level":"info","event":"Dag name:pipeline_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.882642","level":"info","event":"Triggering Dag Run.","trigger_dag_id":"model_training_dag_simple","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.902819","level":"info","event":"Dag Run triggered successfully.","trigger_dag_id":"model_training_dag_simple","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.909857","level":"info","event":"Waiting for dag run to complete execution in allowed state.","dag_id":"model_training_dag_simple","run_id":"manual__2025-09-17T17:35:24.882579+00:00","allowed_state":["success"],"logger":"task"}
+{"timestamp":"2025-09-17T17:36:24.921823","level":"info","event":"Waiting for dag run to complete execution in allowed state.","dag_id":"model_training_dag_simple","run_id":"manual__2025-09-17T17:35:24.882579+00:00","allowed_state":["success"],"logger":"task"}
+{"timestamp":"2025-09-17T17:37:24.941203","level":"info","event":"Waiting for dag run to complete execution in allowed state.","dag_id":"model_training_dag_simple","run_id":"manual__2025-09-17T17:35:24.882579+00:00","allowed_state":["success"],"logger":"task"}
+{"timestamp":"2025-09-17T17:38:24.955727","level":"info","event":"DagRun finished with allowed state.","dag_id":"model_training_dag_simple","state":"success","logger":"task"}
+{"timestamp":"2025-09-17T17:38:24.987950Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:38:24.988047Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:38:24.988833Z","level":"info","event":"Task operator:<Task(TriggerDagRunOperator): trigger_model_training>","chan":"stdout","logger":"task"}

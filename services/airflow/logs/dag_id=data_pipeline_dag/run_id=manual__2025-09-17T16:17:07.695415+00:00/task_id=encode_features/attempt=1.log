@@ -1,0 +1,10 @@
+{"timestamp":"2025-09-17T16:17:12.561657","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-17T16:17:12.561826","level":"info","event":"Filling up the DagBag from /Users/rail/PracticalML/MLOps-practice/services/airflow/dags/data_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-17T16:17:13.067030Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T16:17:13.067097Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T16:17:13.067243Z","level":"info","event":"Current task name:encode_features","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T16:17:13.067267Z","level":"info","event":"Dag name:data_pipeline_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T16:17:13.532732","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-09-17T16:17:13.544434Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T16:17:13.544493Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T16:17:13.544707Z","level":"info","event":"Task operator:<Task(PythonOperator): encode_features>","chan":"stdout","logger":"task"}

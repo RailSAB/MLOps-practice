@@ -1,0 +1,15 @@
+{"timestamp":"2025-09-17T17:35:24.842095","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-17T17:35:24.843094","level":"info","event":"Filling up the DagBag from /Users/rail/PracticalML/MLOps-practice/services/airflow/dags/entire_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-17T17:35:24.879447Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.879537Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.879919Z","level":"info","event":"Current task name:trigger_data_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.879963Z","level":"info","event":"Dag name:pipeline_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.880022","level":"info","event":"Triggering Dag Run.","trigger_dag_id":"data_pipeline_dag","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.897275","level":"info","event":"Dag Run triggered successfully.","trigger_dag_id":"data_pipeline_dag","logger":"task"}
+{"timestamp":"2025-09-17T17:35:24.906096","level":"info","event":"Waiting for dag run to complete execution in allowed state.","dag_id":"data_pipeline_dag","run_id":"manual__2025-09-17T17:35:24.879968+00:00","allowed_state":["success"],"logger":"task"}
+{"timestamp":"2025-09-17T17:36:24.919675","level":"info","event":"Waiting for dag run to complete execution in allowed state.","dag_id":"data_pipeline_dag","run_id":"manual__2025-09-17T17:35:24.879968+00:00","allowed_state":["success"],"logger":"task"}
+{"timestamp":"2025-09-17T17:37:24.940613","level":"info","event":"Waiting for dag run to complete execution in allowed state.","dag_id":"data_pipeline_dag","run_id":"manual__2025-09-17T17:35:24.879968+00:00","allowed_state":["success"],"logger":"task"}
+{"timestamp":"2025-09-17T17:38:24.951952","level":"info","event":"DagRun finished with allowed state.","dag_id":"data_pipeline_dag","state":"success","logger":"task"}
+{"timestamp":"2025-09-17T17:38:24.983886Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:38:24.984004Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-17T17:38:24.985037Z","level":"info","event":"Task operator:<Task(TriggerDagRunOperator): trigger_data_pipeline>","chan":"stdout","logger":"task"}
